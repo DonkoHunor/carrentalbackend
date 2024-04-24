@@ -1,6 +1,6 @@
 export class Car {
     id: string
-    plate_number: string
+    license_plate_number: string
     brand: string
     model: string
     daily_cost: number

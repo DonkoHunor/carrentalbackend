@@ -36,7 +36,7 @@ export class CarsService {
       }
     });
 
-    if(rented !== undefined) {
+    if(rented !== undefined && rented !== null) {
       throw new ConflictException('The car is already rented');
     }
 
