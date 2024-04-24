@@ -9,10 +9,10 @@ datasource db {
 
 model cars {
   id                   Int    @id @default(autoincrement())
-  license_plate_number String?   @db.VarChar(20)
-  brand                String?   @db.VarChar(255)
-  model                String?   @db.VarChar(255)
-  daily_cost           Int?
+  license_plate_number String   @db.VarChar(20)
+  brand                String   @db.VarChar(255)
+  model                String   @db.VarChar(255)
+  daily_cost           Int
   created_at           DateTime? @default(now())
   updated_at           DateTime? @updatedAt
   rentals rentals[]
